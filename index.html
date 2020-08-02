@@ -15,6 +15,7 @@
     .content {
       max-width: 1300px;
       margin: auto;
+      padding: 15px;
       line-height: 1.8;
       font-size: 1.1em;
       font-family: sans-serif;
@@ -60,9 +61,15 @@
     }
 
     /** hide other tabs and only show logo and "more" **/
-    @media only screen and (max-width: 1100px) {
+    @media only screen and (max-width: 1200px) {
       .navbar {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(6, 1fr);
+      }
+    }
+
+    @media only screen and (max-width: 930px) {
+      .navbar {
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .navlarge {
