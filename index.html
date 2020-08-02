@@ -60,6 +60,16 @@
       display: none;
     }
 
+    .points {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-between;
+    }
+
+    .points > * {
+      padding: 15px;
+    }
+
     /** hide other tabs and only show logo and "more" **/
     @media only screen and (max-width: 1200px) {
       .navbar {
@@ -67,7 +77,7 @@
       }
     }
 
-    @media only screen and (max-width: 930px) {
+    @media only screen and (max-width: 940px) {
       .navbar {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -99,17 +109,17 @@
     <p><strong>This site is still under construction. Please come back later.</strong></p>
     <h2>About Us</h2>
     <p>ISNTCO:</p>
-    <ul>
-      <li>is an OEM Parts procurement Services Company and always consider your process reliability our #1 priority</li>
-      <li>is passionate about meeting your energy and industrial challenges with quality, technologically innovative
+    <div class="points">
+      <p>is an OEM Parts procurement Services Company and always consider your process reliability our #1 priority</p>
+      <p>is passionate about meeting your energy and industrial challenges with quality, technologically innovative
       and sustainable solutions and products. As an independent company, we are uniquely positioned to share with you,
       as committed partners to ensure your engineering ambitions with competitiveness and environmental obligations
-      and meeting your demand of equipment and OEM parts at your door step.</li>
-      <li>is in the business of procurement and outsourcing services of OEM parts, for the water, power, oil, gas 
+      and meeting your demand of equipment and OEM parts at your door step.</p>
+      <p>is in the business of procurement and outsourcing services of OEM parts, for the water, power, oil, gas 
       and general industrial plant equipments and parts for the last many years. With our outstanding outsourcing
       in North America, Europe, Korea and Japan, we can supply your any demand of equipment, accessories and spare 
-      parts at a very low cost and in shorter delivery time.</li>
-    </ul>
+      parts at a very low cost and in shorter delivery time.</p>
+    </div>
     <h2>Types of Products Sold</h2>
     <ul>
       <li>Construction and heavy equipment</li>
