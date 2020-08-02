@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>ISNTCO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Maven+Pro:wght@900&display=swap">
+	<style>
+    /** basic site styling **/
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Maven Pro', sans-serif;
+    }
+
+    /* wraps all non-navbar elems */
+    .content {
+      max-width: 1300px;
+      margin: auto;
+      line-height: 1.8;
+      font-size: 1.1em;
+      font-family: sans-serif;
+      color: #444;
+    }
+
+    /** top navbar styling **/
+    .navbar {
+      height: 50px;
+      font-size: 1.5em;
+      font-family: 'Maven Pro';
+
+      display: grid;
+      grid-template-columns: 30% repeat(5, 1fr);
+      justify-items: center;
+      align-items: center;
+      border-bottom-style: solid;
+      border-color: #777;
+      border-radius: 5px;
+      border-width: 2px;
+    }
+
+    .navbar > *:hover {
+      color: red;
+    }
+
+    .navhome {
+      justify-self: left;
+      background-color: #99F;
+    }
+
+    /* css based logo for isntco */
+    .logo {
+      font-family: 'Maven Pro', sans-serif;
+      font-size: 1.7em;
+      padding: 0.3em;
+      font-weight: 900;
+    }
+
+    /* hide "more" tab since page is >1100px */
+    .more {
+      display: none;
+    }
+
+    /** hide other tabs and only show logo and "more" **/
+    @media only screen and (max-width: 1100px) {
+      .navbar {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .navlarge {
+        display: none;
+      }
+
+      .more {
+        display: block;
+      }
+    }
+	</style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="navhome">
+      <a style="text-decoration:none;color:black" href="/"><span class="logo">isntco</span></a>
+    </div>
+    <div class="navlarge">About Us</div>
+    <div class="navlarge">Business Area</div>
+    <div class="navlarge">Products</div>
+    <div class="navlarge">Service</div>
+    <div class="navlarge">Contact Us</div>
+    <div class="more">More</div>
+  </div>
+  <div class="content">
+    <h1>Industrial Solutions and Trading Company</h1>
+    <p><strong>This site is still under construction. Please come back later.</strong></p>
+    <h2>About Us</h2>
+    <p>ISNTCO:</p>
+    <ul>
+      <li>is an OEM Parts procurement Services Company and always consider your process reliability our #1 priority</li>
+      <li>is passionate about meeting your energy and industrial challenges with quality, technologically innovative
+      and sustainable solutions and products. As an independent company, we are uniquely positioned to share with you,
+      as committed partners to ensure your engineering ambitions with competitiveness and environmental obligations
+      and meeting your demand of equipment and OEM parts at your door step.</li>
+      <li>is in the business of procurement and outsourcing services of OEM parts, for the water, power, oil, gas 
+      and general industrial plant equipments and parts for the last many years. With our outstanding outsourcing
+      in North America, Europe, Korea and Japan, we can supply your any demand of equipment, accessories and spare 
+      parts at a very low cost and in shorter delivery time.</li>
+    </ul>
+    <h2>Types of Products Sold</h2>
+    <ul>
+      <li>Construction and heavy equipment</li>
+      <li>Fire, heating, ventilation and air conditioning systems</li>
+      <li>Electrical equipment</li>
+      <li>Mechanical parts</li>
+      <li>Instruments and control</li>
+      <li>Oil and gas plant parts</li>
+      <li>Water plant parts</li>
+    </ul>
+    <h2>Contact Us</h2>
+    <p>Abdul Rauf Sandhu (President)</p>
+    <p><b>Tel:</b> +1 647-262-4862</p>
+    <p><b>Email:</b> arsandhu@isntco.com</p>
+  </div>
+</body>
+</html>

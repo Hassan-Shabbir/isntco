@@ -1,0 +1,59 @@
+  Your homepage should provide a sense of your company’s values, unique selling proposition (USP), and purpose.
+Your logo, tagline, and purpose need to take center stage. In fact, you might even want to add a form or statement to the very top of your homepage — preferably in a large font — that gives your visitors a sense of what you do:
+
+What problems do you solve for your customers? How do you improve your clients’ lives — whether personal or professional?
+
+
+TODO:
+gzip
+proper caching
+spelling & grammar
+cross-browser compatibility
+mobile friendly
+viewport meta tag
+google page speed score +90
+optimize http headers
+optimize images
+html5/css3 compatibility
+html/css validation
+custom 404 page
+favicon
+human-friendly urls
+google rich snippets
+robots.txt
+xml sitemaps
+compression
+accessibility validation
+ssl/https
+enable content security policy
+structured data for google search
+image alt text
+google page speed insights
+compress images
+google mobile-friendly test
+browser caching
+minify html,css,js
+relative styling
+works with different zoom levels
+
+
+DONE:
+logo
+https support
+faafuePe2Ako
+
+Css grid Notes:
+grid:
+grid-template-{columns,rows} defines size of container pieces
+repeat(n, v) repeats value n times
+grid-template combines both
+
+items:
+grid-column-start/end: span
+start !< end
+values can be negative to refer to end
+span refers to how many from start or end
+use / to split between start and end with grid-column
+grid-row also exists
+grid-area combines column-{start,end} row-{start,end} separated by /
+order: changes order

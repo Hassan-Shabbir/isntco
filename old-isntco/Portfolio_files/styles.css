@@ -1,0 +1,201 @@
+/*
+Design by http://JoomlaThemes.co
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,font,img,ins,kbd,q,s,samp,small,strike,sub,sup,tt,var,center,dl,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {background: transparent;border: 0;font-style: inherit;font-weight: inherit;margin: 0;padding: 0;outline: 0;vertical-align: baseline;} table {border-collapse: collapse;border-spacing: 0;}
+
+/* Main Layout */
+html {height: 100%;}
+body { font:normal 13px/1.8em Arial, Helvetica, sans-serif; color:#555;background: #edf3ff url(/web/20180821114110im_/http://isntco.com/templates/jt015_j15/images/bg.png) 0 0 repeat;}
+.background {position: absolute;width: 100%;}
+h1,h2,h3,h4,h5,h6,.componentheading {margin:0; padding:10px 0; font-weight:bold; color:#213842;font-family: Arial, Helvetica, sans-serif; letter-spacing:1px }
+.componentheading { font-style:italic;font-size:20px;}
+h1{font-size:24px;}
+h2 {font-size:22px;}
+h3 {font-size:20px;}
+h4 {font-size:16px;} h5 {font-size:14px;} h6 {font-size:12px;}
+a {color: #213842;text-decoration: underline;}
+a:hover {color:#6A8C2B}
+ul {margin:0 0 0 15px;}
+p {margin-top: 0;margin-bottom: 10px;}
+blockquote { background:#eee; border:3px solid #ccc; margin:5px; padding:5px; font-size:18px; font-family:"Times New Roman", Times, serif; font-style:italic}
+element.style { height:auto;}
+hr { width:100%; clear:both; border:none; height:2px; background:#eee;}
+.clr {clear: both;}
+
+/* Header */
+#logo-w { position:relative; height:80px; width:960px; margin:0 auto;}
+#header-w { background:url(/web/20180821114110im_/http://isntco.com/templates/jt015_j15/images/header.jpg) top center repeat-x}
+.top {color:#fff; position:absolute;width:450px; height:150px; padding:10px;top:15px; right:15px; z-index:1}
+.top a {color:#fff;}
+.logo { position:absolute; top:150px; width:266px; height:63px; left:0px; color:#fff;}
+#slide-w { margin:0; padding:0;}
+/* Navigation */
+#nav {background:none; height:40px; margin:0}
+#navl {background:none; height:40px;width:960px; margin:0 auto; }
+#navr {background: url(/web/20180821114110im_/http://isntco.com/templates/jt015_j15/images/nav.png) top left repeat-x;height:50px;}
+
+#nav {z-index:5; position:relative;}
+#nav ul {margin:0; padding:0; float:left;}
+#nav ul li {list-style:none;float:left;height:50px;position:relative; padding:0; margin:0; background:none; border-left:1px solid #175ca0}
+#nav ul li a { display:block;padding:0 10px; margin:0;line-height:50px;color:#d4d4d4;font-weight:bold;text-decoration:none;font-size:15px;}
+#nav ul li.active { background:none;}
+#nav ul li.active a {color:#fff; background:url(/web/20180821114110im_/http://isntco.com/templates/jt015_j15/images/nav-a.png) top left repeat-x;}
+#nav ul li:hover { background:none}
+#nav ul li a:hover{color:#fff;text-decoration:none; background:url(/web/20180821114110im_/http://isntco.com/templates/jt015_j15/images/nav-a.png) top left repeat-x;}
+#nav ul li ul {position:absolute;width:150px;left:-999em;border-top:0; margin:0;}
+#nav ul li:hover ul, #menu ul li.sfHover ul {left:0;}
+#nav ul li ul li {padding:0;height:auto;width:150px; margin:0; border:none;}
+#nav ul li:hover ul li a { background:#6F9130;text-shadow:none;}
+#nav ul li:hover ul li { background:none;}
+#nav ul li:hover ul li a, #nav ul li ul li a, #nav ul li.active ul li a{margin:0; padding:0 0 0 10px;height:24px;line-height:24px;background:#6F9130;border-bottom:1px solid #175ca0;color:#d4d4d4; font-size:11px;font-weight:normal;text-shadow:none;}
+#nav ul li ul li a:hover, #nav ul li ul li.active a, #nav ul li.active ul li a:hover, #nav ul li.active ul li.active a {margin:0; padding:0 0 0 10px;height:24px;line-height:24px;background:#799D3D;color:#fff; font-size:11px;text-shadow:none;}
+#nav ul li ul ul, #nav ul li:hover ul ul, #nav ul li:hover ul ul ul, #nav ul li:hover ul ul ul ul, #nav ul li.sfHover ul ul, #nav ul li.sfHover ul ul ul, #nav ul li.sfHover ul ul ul ul {left:-999em;}
+
+/* Content */
+#main { margin:0 auto;width:1000px; background:url(/web/20180821114110im_/http://isntco.com/templates/jt015_j15/images/shadow.png) top center no-repeat;}
+#main, .leading, #page {position: relative;}
+#main-content { clear:both;margin:0 auto; padding:0 5px; background:#fff;}
+
+#maincol {position: relative;}
+#wrapper { margin:10px auto 0 auto; width:960px; padding:0;position: relative;}
+#top1 {background:url(/web/20180821114110im_/http://isntco.com/templates/jt015_j15/images/main-top.png) 0 0 no-repeat;clear:both;}
+#top2 {background: url(/web/20180821114110im_/http://isntco.com/templates/jt015_j15/images/main-top.png) 100% 100% no-repeat; }
+#top3 { background: #fff; height: 6px;margin:0 6px;}
+#bot1 {background:url(/web/20180821114110im_/http://isntco.com/templates/jt015_j15/images/main-bot.png) 0 0 no-repeat;clear:both;}
+#bot2 {background: url(/web/20180821114110im_/http://isntco.com/templates/jt015_j15/images/main-bot.png) 100% 100% no-repeat; }
+#bot3 { background: #fff; height: 6px;margin:0 6px;}
+#comp_60 { width:530px; float:right; position:relative; padding:0; margin:0;  min-height:300px;}
+#comp_80 { width:740px; float:right; position:relative; padding:0; margin:0;  min-height:300px;}
+#comp_100 {  width:950px; position:relative; padding:0;margin:0 auto;  min-height:300px; }
+#comp-i {padding:0 10px;}
+#comp { float:left;}
+.cols1 {display: block;float: none;margin: 0;width: 100%;}
+.cols2 {width: 49%;overflow: hidden;}
+.cols3 {width: 33%; float:left;}
+.column1, .column2, .column3 {position: relative;float: left;margin: 0;}
+.colpad {padding: 0 10px;position: relative;}
+.article_row {overflow: hidden;margin: 0 -10px 15px -10px;}
+.spacer .module {float: left;}
+.spacer.w99 .module {width: 100%;}
+.spacer.w49 .module {width: 50%;}
+.spacer.w33 .module {width: 33.3%;}
+.spacer.w24 .module {width: 24.5%;}
+
+/* Content styles */
+.buttonheading { position:absolute; top:20px; right:5px;}
+.buttonheading .icon {display:block;width:16px;height:16px;float:left;margin-left:5px;}
+.buttonheading .pdf {background: url(/web/20180821114110im_/http://isntco.com/templates/jt015_j15/images/pdf_button.png) 0 50% no-repeat;}
+.buttonheading .print {background: url(/web/20180821114110im_/http://isntco.com/templates/jt015_j15/images/printButton.png) 0 50% no-repeat;}
+.buttonheading .email {background: url(/web/20180821114110im_/http://isntco.com/templates/jt015_j15/images/emailButton.png) 0 50% no-repeat;}
+.iteminfo {font-size: 11px;overflow:hidden;margin-bottom:5px;display:block;margin-top:-10px;width: 100%; color:#d2d2d2;}
+.modifydate, .createdby, .createdate {padding:0 10px 0 0;}
+.createdby {font-weight:bold;}
+a.readon {margin-top:15px;}
+.component-pad {padding: 15px;}
+.banneritem_text {margin-bottom: 10px;}
+#modlgn_username, #modlgn_passwd {padding: 3px;}
+h2.contentheading {padding-right: 65px;} .contentheading, .contentheading a { font-size:25px; line-height:30px; text-decoration:none;} .contentheading a:hover {}
+.sectiontableheader {font-weight: bold;line-height: 25px;text-align: left;}
+tr.sectiontableentry0 td, tr.sectiontableentry1 td, tr.sectiontableentry2 td, td.sectiontableentry0, td.sectiontableentry1, td.sectiontableentry2 {text-align: left;padding: 0 4px;vertical-align: middle;border-top: 1px solid #e4e4e4;line-height: 30px;}
+.pagination span, .pagination a {margin-right: 5px; padding:2px 5px; background:url(/web/20180821114110im_/http://isntco.com/templates/jt015_j15/images/button.png) 0 0 repeat-x; border:1px solid #557120; color:#eee;-moz-border-radius: 3px;border-radius: 3px;}
+.button { background:url(/web/20180821114110im_/http://isntco.com/templates/jt015_j15/images/button.png) 0 0 repeat-x; border:1px solid #557120; color:#eee;cursor:pointer; padding:2px 5px;margin:0 0 10px 0;-moz-border-radius:3px;border-radius:3px;}
+.button:hover,.pagination a:hover {background:#80a63a;color:#fff;}
+.inputbox, input, textarea, select {background:#fff; border:1px solid #d4d4d4;}
+
+/* Sidebar */
+#leftbar-w {width:210px; min-height:200px; float:left;  margin:0;}
+#rightbar-w {width:210px; min-height:200px; float:right;  margin:0;}
+#sidebar {padding:0}
+#sidebar .module {padding:5px; margin:0;}
+#sidebar .module-title {font-size:15px;font-weight:bold;margin:0;padding:0 0 0 10px; height:40px; line-height:32px; color: #fff; background: url(/web/20180821114110im_/http://isntco.com/templates/jt015_j15/images/h3.png) 0 0 no-repeat;}
+#sidebar .module-body {margin:0; padding:0 5px;}
+#sidebar .module-body p{padding:0; margin:0;}
+#sidebar  ul li { margin:0 5px; padding:0;}
+#sidebar .module ul.menu{margin:5px 0 0 0; padding:0;list-style:none; padding:0; list-style-type:none;}
+#sidebar .module ul.menu li{ list-style:none; list-style-type:none;margin:0; padding:0; border-bottom:1px solid #e4e4e4;}
+#sidebar .module ul.menu li a {display:block;margin:0; padding:3px 0 3px 25px;font-weight:bold;line-height:20px;background: url(/web/20180821114110im_/http://isntco.com/templates/jt015_j15/images/arrow.png) 0% 50% no-repeat; text-decoration:none; color:#858585; font-size:13px;}
+#sidebar .module ul.menu li a:hover { color:#4b651a; text-decoration:none;}
+#sidebar .module ul.menu li.active a{color:#4b651a;}
+#sidebar .module ul.menu li ul {border-top:1px solid #e4e4e4; margin:0;}
+#sidebar .module ul.menu li ul li {background:none; border:none; margin: 0 0 0 15px;   }
+#sidebar .module ul.menu li ul li a{ border: 0; color:#858585; background: url(/web/20180821114110im_/http://isntco.com/templates/jt015_j15/images/arrow.png) 0% 50% no-repeat;}
+#sidebar .module ul.menu li ul li a:hover{ border: 0; color:#4b651a; background: url(/web/20180821114110im_/http://isntco.com/templates/jt015_j15/images/arrow.png) 0% 50% no-repeat; }
+#sidebar .module ul.menu li.active ul li a{color: #858585;}
+#sidebar .module ul.menu li ul li.active a, #sidebar .module ul.menu li.active ul li a:hover{color:#4b651a;}
+
+/* Modules 1 */
+#mods1 {overflow: hidden;padding:0; margin:0 auto;clear:both;}
+#mods1 .module { padding:0; margin:0; }
+#mods1 .inner { padding:10px; }
+#mods1 .module-title {margin:0;padding:0 0 10px 0;}
+#mods1  h3 {display: block; font-family:Arial, Helvetica, sans-serif;padding-left: 10px;padding-top: 3px;height: 20px;font-size: 18px; color:#6A8C2B;}
+#mods1 .module-body {padding:0; margin:0;}
+#mods1 ul {margin:0 10px; padding:0;}
+#mods1 ul li {list-style:inside;}
+#mods1-i { clear:both;}
+/* Modules 2 */
+#mods2 {overflow: hidden;padding:0; margin:0 auto;clear:both;width:960px; }
+#mods2 .module { margin:0;padding:0;}
+#mods2 .inner { padding:10px;}
+#mods2 .module-title {margin:5px 0;padding:0;display: block;height: 22px;font-size: 20px;font-weight:bold; color:#6A8C2B;}
+#mods2 .module-body {padding:0; margin:0;}
+#mods2 ul {margin:0; padding:0;}
+#mods2 ul li {list-style:inside;margin:0; padding:0;}
+
+/* Modules 3 */
+#mods3 {overflow: hidden;padding:0; margin:0 auto; clear:both; width:960px; background:#fff;}
+#mods3 .module { margin:0;padding:0;}
+#mods3 .inner { padding:5px 10px 0 10px;}
+#mods3 .module-title {margin:0 0 5px 0;padding:0;display: block;height: 22px;font-size: 20px;font-weight: bold; color:#6A8C2B;}
+#mods3 .module-body {padding:0; margin:0;}
+#mods3 ul {margin:0 10px; padding:0;}
+#mods3 ul li {list-style:inside; border-bottom:1px solid #f6f6f6;}
+#mods3 ul li a {font-weight:100;}
+
+/* Footer */
+#footer { clear:both; margin:10px 0 0 0; padding:0;}
+.footer-pad { width:960px; margin:0 auto; padding: 0;}
+#bottom {width:960px; margin:0 auto; padding: 0 0;}
+.copy { margin:0; padding:0 0 0 10px;font-size:12px; float:left}
+.copy a {font-size:12px;}
+.design {margin:0; padding:0 10px 0 0; font-size:11px; color:#edf3ff; text-align:right; float:right}
+.design a { text-decoration:none; font-size:11px;color:#edf3ff}
+
+/* System Messages */
+#system-message    { margin-bottom: 10px; padding: 0;}
+#system-message dt { font-weight: bold; }
+#system-message dd { margin: 0; font-weight: bold; text-indent: 30px; }
+#system-message dd ul { color: #0055BB; margin-bottom: 10px; list-style: none; padding: 10px; border-top: 3px solid #84A7DB; border-bottom: 3px solid #84A7DB;}
+/* System Standard Messages */
+#system-message dt.message { display: none; }
+#system-message dd.message {  }
+/* System Error Messages */
+#system-message dt.error { display: none; }
+#system-message dd.error ul { color: #c00; background-color: #E6C0C0; border-top: 3px solid #DE7A7B; border-bottom: 3px solid #DE7A7B;}
+/* System Notice Messages */
+#system-message dt.notice { display: none; }
+#system-message dd.notice ul { color: #c00; background: #EFE7B8; border-top: 3px solid #F0DC7E; border-bottom: 3px solid #F0DC7E;}
+/* Debug */
+#system-debug     { color: #ccc; background-color: #fff; padding: 10px; margin: 10px; }
+#system-debug div { font-size: 11px;}
+/*
+     FILE ARCHIVED ON 11:41:10 Aug 21, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:14:02 Jul 08, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  PetaboxLoader3.resolve: 114.7 (3)
+  esindex: 0.011
+  RedisCDXSource: 6.332
+  exclusion.robots.policy: 0.199
+  captures_list: 158.656
+  exclusion.robots: 0.213
+  CDXLines.iter: 11.103 (3)
+  PetaboxLoader3.datanode: 238.416 (5)
+  load_resource: 233.298
+  LoadShardBlock: 138.303 (3)
+*/

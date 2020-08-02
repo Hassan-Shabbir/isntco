@@ -1,0 +1,72 @@
+/**
+ * @version     $Id$ 2.0.2 0
+ * @package     Joomla
+ * @copyright   Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.
+ * @license     GNU/GPL, see LICENSE.php
+ */
+
+
+/* Calendar */
+div.calendar .button {
+	color:#fff;
+	font-size:11px;
+	font-weight:bold;
+	margin:0px 0px 0px 0px;
+	padding:2px;
+	background:none;
+	width:auto;
+	text-transform:none;
+	text-align:center;
+	border:none;
+	cursor:pointer;
+	overflow:visible;
+	display:table-cell;
+}
+
+div.with_errors {
+	border:1px solid #F00;
+	overflow:auto;
+	margin:5px 0px;
+	padding:5px !important;
+}
+div.with_errors label {
+	color:#F00;
+}
+div.aiContactSafe_error_msg {
+	clear:both;
+	float:left;
+}
+div.aiContactSafe_error_msg ul {
+	list-style:none;
+}
+div.aiContactSafe_error_msg li {
+	list-style:none;
+	display:block;
+	color:#F00;
+}
+
+label.required_field {
+	display:inline-block !important;
+}
+
+/*
+     FILE ARCHIVED ON 21:22:27 Oct 19, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:21:10 Jul 08, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 67.287
+  load_resource: 232.09
+  esindex: 0.017
+  exclusion.robots.policy: 0.283
+  exclusion.robots: 0.303
+  PetaboxLoader3.datanode: 105.654 (5)
+  LoadShardBlock: 46.89 (3)
+  PetaboxLoader3.resolve: 121.354 (2)
+  RedisCDXSource: 0.858
+  CDXLines.iter: 15.83 (3)
+*/
