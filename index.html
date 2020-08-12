@@ -16,9 +16,20 @@
       scroll-behavior: smooth;
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1, h2 {
       /* use google font that closely resembles logo */
       font-family: 'Maven Pro', sans-serif;
+      text-align: center;
+      font-size: 1.8em;
+    }
+
+    h3, h4, h5, h6 {
+      text-align: center;
+      font-size: 1.3em;
+    }
+
+    a {
+      text-decoration: none;
     }
 
     /* style copied from semantic ui */
@@ -96,6 +107,16 @@
       padding: 15px;
     }
 
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-between;
+    }
+
+    .products > * {
+      padding: 15px;
+    }
+
     .customers {
       display: flex;
       flex-wrap: wrap;
@@ -136,20 +157,20 @@
 <body>
   <div class="navbar">
     <div class="navhome">
-      <a style="text-decoration:none;color:black" href="/"><span class="logo">isntco</span></a>
+      <a style="text-decoration:none;color:black" href="#"><span class="logo">isntco</span></a>
     </div>
     <div class="navlarge"><a href="#">About Us</a></div>
     <div class="navlarge"><a href="#">Business Area</a></div>
     <div class="navlarge"><a href="#">Products</a></div>
-    <div class="navlarge"><a href="#">Service</a></div>
-    <div class="navlarge"><a href="#">Contact Us</a></div>
+    <div class="navlarge"><a href="#contact-us">Contact Us</a></div>
     <div class="more">More</div>
   </div>
   <div class="content">
     <div class="hero">
-      <h1>Industrial Solutions and Trading Company</h1>
+      <h1>Industrial Solutions &amp; Trading Company Inc.</h1>
       <p><strong>This site is still under construction. Please come back later.</strong></p>
-      <a href="#contact-us"><button>Contact Us</button></a>
+      <!--<img src="plant.jpg" alt="picture of a processing plant" />-->
+      <!--<a href="#contact-us"><button>Contact Us</button></a>-->
     </div>
     <h2>About Us</h2>
     <p>ISNTCO:</p>
@@ -164,38 +185,56 @@
       in North America, Europe, Korea and Japan, we can supply your any demand of equipment, accessories and spare 
       parts at a very low cost and in shorter delivery time.</p>
     </div>
-    <h2>Customers</h2>
-    <div class="customers">
-      <p>Microsoft</p>
-      <p>Nvidia</p>
-      <p>Apple</p>
-      <p>Intel</p>
-      <p>Salesforce</p>
-      <p>Alphabet</p>
-      <p>Anthem</p>
-      <p>PayPal</p>
-      <p>Procter and Gamble</p>
-      <p>VMware</p>
-      <p>Cisco</p>
-      <p>Intuit</p>
-    </div>
     <h2>Types of Products Sold</h2>
+    <h3>Shinilace</h3>
+    <div class="products">
+      <div>
+        <img src="shinilace1.jpg" alt="shinilace product" />
+        <p>DIN Type Tube Fittings</p>
+      </div>
+      <div>
+        <img src="shinilace2.jpg" alt="shinilace product" />
+        <p>DIN 2353 Bite Type Tube Fittings</p>
+      </div>
+      <div>
+        <img src="shinilace3.jpg" alt="shinilace product" />
+        <p>LOK Type Fittings</p>
+      </div>
+      <div>
+        <img src="shinilace4.jpg" alt="shinilace product" />
+        <p>Valves</p>
+      </div>
+      <div>
+        <img src="shinilace5.jpg" alt="shinilace product" />
+        <p>Ship Stores</p>
+      </div>
+    </div>
+    <h3>We also deal with other products regarding the following:</h3>
     <ul>
+      <li>Water plant parts</li>
       <li>Construction and heavy equipment</li>
       <li>Fire, heating, ventilation and air conditioning systems</li>
       <li>Electrical equipment</li>
       <li>Mechanical parts</li>
       <li>Instruments and control</li>
       <li>Oil and gas plant parts</li>
-      <li>Water plant parts</li>
     </ul>
+    <h2>Customers</h2>
+    <div class="customers">
+      <img height="100px" src="logo-ttc.svg" alt="Toronto Transit Commission logo" />
+      <img height="100px" src="logo-wapda.jpg" alt="WAPDA logo" />
+      <img height="100px" src="logo-orpic.jpg" alt="ORPIC logo" />
+      <img height="100px" src="logo-oocep.png" alt="OOCEP logo" />
+      <img height="100px" src="logo-op.png" alt="OP logo" />
+      <img height="100px" src="logo-ogc.jpg" alt="OGC logo" />
+    </div>
     <h2 id="contact-us">Contact Us</h2>
-    <p>Abdul Rauf Sandhu (President)</p>
-    <p><b>Tel:</b> +1 647-262-4862</p>
-    <p><b>Email:</b> arsandhu@gmail.com</p>
-    <p><b>Email:</b> sales@isntco.com</p>
-    <p><b>Email:</b> purchase@isntco.com</p>
-    <p><b>Email:</b> customerservice@isntco.com</p>
+    <p>
+      <b>Address:</b> 2348 Strathmore Cresent, Pickering, ON, L1X 2H2<br/>
+      <b>Telephone:</b> <a href="tel:+1 647-262-4862">+1 (647) 262 - 4862</a><br/>
+      <b>Email:</b> <a href="mailto:sales@isntco.com">sales@isntco.com</a><br/>
+      <b>Email:</b> <a href="mailto:customerservice@isntco.com">customerservice@isntco.com</a>
+    </p>
   </div>
 </body>
 </html>
