@@ -31,14 +31,15 @@ a {
   text-decoration: none;
 }
 
-/* style copied from semantic ui */
-button {
+.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
   background-color: #207f20;
-  margin: 0 auto;
-  display: block;
+  display: inline;
   border: grey;
-  padding: 15px 30px;
-  border-radius: 5px;
+  padding: 5px 15px;
+  border-radius: 10px;
 }
 
 /* wraps all non-navbar elems */
