@@ -1,6 +1,8 @@
 import scrapy
 import re
 import itertools
+from scrapy.linkextractors import LinkExtractor
+from scrapy.http.request import Request
 
 class QuotesSpider(scrapy.Spider):
     name = 'Email Scraper'
@@ -11,6 +13,104 @@ class QuotesSpider(scrapy.Spider):
             'DOWNLOAD_DELAY': 3,
             'COOKIES_ENABLED': False,
     }
+    
+    link_extractor = LinkExtractor()
+
+    allowed_domains = [
+        'healthyoilseeds.com',
+        'johnsonseeds.com',
+        'konuklarbakliyat.com',
+        'alliancezone.ca',
+        'buvite.com',
+        'grainmillers.com',
+        'hfifamily.com',
+        'makspm.com',
+        'scoular.com',
+        'stolmina.eu',
+        'tafoods.ca',
+        'thomasnet.com',
+        'viterra.ca',
+        'zayma.com.mx',
+        'bescograin.ca',
+        'neprairiegrain.com',
+        'psinternational.net',
+        'adroitoverseas.com',
+        'agricom.com',
+        'agrocorp.ca',
+        'agtfoods.com',
+        'allcommodities.ca',
+        'avenafoods.com',
+        'broadgrain.com',
+        'canadiangraininc.com',
+        'cargill.ca',
+        'cbconstantini.com',
+        'ceresglobalagcorp.com',
+        'chsinc.com',
+        'commodious.ca',
+        'delmarcommodities.com',
+        'dspdirect.ca',
+        'etgworld.com',
+        'exportpackers.com',
+        'fieldfarms.ca',
+        'g3.ca',
+        'gavilon.com',
+        'globeways.com',
+        'gltraders.com',
+        'grainex.net',
+        'greatwesternrail.com',
+        'jglgrain.com',
+        'jkmilling.ca',
+        'johnsonseeds.com',
+        'lineargrain.com',
+        'marinacommodities.com',
+        'marketplacecommodities.com',
+        'maviga.com',
+        'mingintl.com',
+        'northwestterminal.com',
+        'otfarms.ca',
+        'parrishandheimbecker.com',
+        'patersonglobalfoods.com',
+        'prairiepulse.com',
+        'primeseeds.com',
+        'providencegrain.ca',
+        'purewest.ag',
+        'rayglen.com',
+        'richardson.ca',
+        'scoular.com',
+        'scoularspecialcrops.com',
+        'seaboardspecialcrops.com',
+        'section12foods.com',
+        'seed-ex.com',
+        'shafercommodities.com',
+        'simpsonseeds.com',
+        'southlandpulse.com',
+        'stonehengeglobal.ca',
+        'sunrisefoods.ca',
+        'swt.ca',
+        'theredwoodgroup.com',
+        'uscommodities-ag.com',
+        'vanderveencommodities.com',
+        'veiklegrain.com',
+        'victoriapulse.ca',
+        'viterra.com',
+        'wagrain.ca',
+        'wilburellis.com',
+        'xptgrain.ca',
+        'yourgrain.ca',
+        'zeghersseed.com',
+        'www',
+        'www',
+        'albertapulse.com',
+        'bellepulses.ca',
+        'meritfoods.com',
+        'naturalspecialty.net',
+        'adm.com',
+        'graincorp.com.au',
+        'andersonsinc.com',
+        'hdc.on.ca',
+        'merakicommodities.com',
+        'roquette.com'
+    ]
 
     # search_engines = [
     #         'https://www.google.com/search?q=',
@@ -141,12 +241,10 @@ class QuotesSpider(scrapy.Spider):
                     'emails': '; '.join(list(emails))
                   }
         else:
-            yield { 
-                    'url': response.url,
-                    'emails': 'NULL'
-                  }
+            for link in self.link_extractor.extract_links(response):
+                yield Request(link.url, callback=self.parse)
+            #yield { 'url': response.url, 'emails': 'NULL' }
             
-
     #def parse(self, response):
     #    """ Get webpage links from search engines. """
 
@@ -175,5 +273,4 @@ class QuotesSpider(scrapy.Spider):
     #    for link in links:
     #        print(link)
     #        yield response.follow(link, self.find_email)
-
 
